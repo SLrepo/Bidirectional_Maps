@@ -1,0 +1,137 @@
+Beginning ExtraCreditTests()...
+=================================================
+KEYS:
+    dog [1, 6]
+cat [1, 2, 4]
+    bird [6]
+-------------------------------------------------
+VALUES:
+    6 [bird, dog]
+4 [cat]
+        2 [cat]
+    1 [cat, dog]
+=================================================
+=================================================
+KEYS:
+    dog [1, 6]
+cat [1, 2, 4]
+    bird [1, 6]
+-------------------------------------------------
+VALUES:
+    6 [bird, dog]
+4 [cat]
+        2 [cat]
+    1 [bird, cat, dog]
+=================================================
+forward iteration over keys:
+  key:bird associated with value:1
+  key:bird associated with value:6
+  key:cat associated with value:1
+  key:cat associated with value:2
+  key:cat associated with value:4
+  key:dog associated with value:1
+  key:dog associated with value:6
+forward iteration over values:
+  value:1 associated with key:bird
+  value:1 associated with key:cat
+  value:1 associated with key:dog
+  value:2 associated with key:cat
+  value:4 associated with key:cat
+  value:6 associated with key:bird
+  value:6 associated with key:dog
+=================================================
+KEYS:
+    dog [1, 6]
+cat [1, 2, 4]
+    bird [1, 6]
+-------------------------------------------------
+VALUES:
+    6 [bird, dog]
+4 [cat]
+        2 [cat]
+    1 [bird, cat, dog]
+=================================================
+=================================================
+KEYS:
+    dog [1, 6]
+cat [1, 2]
+    bird [1, 6]
+-------------------------------------------------
+VALUES:
+    6 [bird, dog]
+2 [cat]
+    1 [bird, cat, dog]
+=================================================
+erased key:cat and value:4
+forward iteration over keys:
+  key:bird associated with value:1
+  key:bird associated with value:6
+  key:cat associated with value:1
+  key:cat associated with value:2
+  key:dog associated with value:1
+  key:dog associated with value:6
+forward iteration over values:
+  value:1 associated with key:bird
+  value:1 associated with key:cat
+  value:1 associated with key:dog
+  value:2 associated with key:cat
+  value:6 associated with key:bird
+  value:6 associated with key:dog
+=================================================
+KEYS:
+    dog [1, 6]
+cat [1, 2]
+    bird [1, 6]
+-------------------------------------------------
+VALUES:
+    6 [bird, dog]
+2 [cat]
+    1 [bird, cat, dog]
+=================================================
+=================================================
+KEYS:
+cat [1, 2]
+    bird [1, 6]
+-------------------------------------------------
+VALUES:
+    6 [bird]
+2 [cat]
+    1 [bird, cat]
+=================================================
+erased all key:bird associations
+forward iteration over keys:
+  key:bird associated with value:1
+  key:bird associated with value:6
+  key:cat associated with value:1
+  key:cat associated with value:2
+forward iteration over values:
+  value:1 associated with key:bird
+  value:1 associated with key:cat
+  value:2 associated with key:cat
+  value:6 associated with key:bird
+=================================================
+KEYS:
+cat [2]
+    bird [6]
+-------------------------------------------------
+VALUES:
+    6 [bird]
+2 [cat]
+=================================================
+erased all value:1 associations
+=================================================
+KEYS:
+cat [2]
+    bird [6]
+-------------------------------------------------
+VALUES:
+    6 [bird]
+2 [cat]
+=================================================
+forward iteration over keys:
+  key:bird associated with value:6
+  key:cat associated with value:2
+forward iteration over values:
+  value:2 associated with key:cat
+  value:6 associated with key:bird
+ExtraCreditTests() completed

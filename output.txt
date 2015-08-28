@@ -1,0 +1,121 @@
+Beginning BasicTests()...
+created bidirectional map with 6 associations
+=================================================
+KEYS:
+        fig [2]
+            eggplant [1]
+    date [6]
+carrot [4]
+    banana [5]
+        apple [3]
+-------------------------------------------------
+VALUES:
+        6 [date]
+    5 [banana]
+4 [carrot]
+        3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+bidirectional links verified
+find on keys and find on values successful
+key:apple associated with value:3
+key:banana associated with value:5
+key:carrot associated with value:4
+key:date associated with value:6
+key:eggplant associated with value:1
+key:fig associated with value:2
+value:1 associated with key:eggplant
+value:2 associated with key:fig
+value:3 associated with key:apple
+value:4 associated with key:carrot
+value:5 associated with key:banana
+value:6 associated with key:date
+forward and backward iterators on keys and values successful
+=================================================
+KEYS:
+            zebra [26]
+        fig [2]
+            eggplant [1]
+    date [6]
+carrot [4]
+    banana [5]
+        apple [3]
+-------------------------------------------------
+VALUES:
+            26 [zebra]
+        6 [date]
+    5 [banana]
+4 [carrot]
+        3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+return value of insert correct
+=================================================
+KEYS:
+        fig [2]
+            eggplant [1]
+    date [6]
+carrot [4]
+    banana [5]
+        apple [3]
+-------------------------------------------------
+VALUES:
+        6 [date]
+    5 [banana]
+4 [carrot]
+        3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+erased key:'zebra' and value:26
+=================================================
+KEYS:
+        fig [2]
+            eggplant [1]
+    date [6]
+banana [5]
+    apple [3]
+-------------------------------------------------
+VALUES:
+        6 [date]
+    5 [banana]
+3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+erased key:'carrot' and value:4
+=================================================
+KEYS:
+    fig [2]
+        eggplant [1]
+banana [5]
+    apple [3]
+-------------------------------------------------
+VALUES:
+    5 [banana]
+3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+erased key:'date' and value:6
+erase tests valid
+=================================================
+KEYS:
+    fig [2]
+        eggplant [1]
+            carrot [6]
+banana [5]
+    apple [3]
+-------------------------------------------------
+VALUES:
+        6 [carrot]
+    5 [banana]
+3 [apple]
+    2 [fig]
+        1 [eggplant]
+=================================================
+return value of insert correct
+follow link function successful
+BasicTests() completed
